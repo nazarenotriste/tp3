@@ -1,1 +1,60 @@
+chicos descargenze atom la forma mas facil es click
+derecho "open in" opcion ademas tengan en cuenta
+que esto es solo para copiar codigo por ende no
+trabajen aqui hagalon en python y luego copienlo
 
+ademas pueden ver como esto graba verciones anteriores
+asi si alguno se la manda podemos volver
+
+
+class articulo:
+    def __init__(self,codigo,precio,ubicacion,estado,cantidad,puntuacion):
+        self.cod=codigo
+        self.pre=precio
+        self.ub=ubicacion
+        self.est=estado
+        self.cant=cantidad
+        self.punt=puntuacion
+
+
+def ubicacion():
+    print("lista de localidades"
+          "\n1)Buenos Aires"
+          "\n2)Provincia de Buenos Aires"
+          "\n3)Cordoba"
+          "\n4)Santa Fe"
+          "\n5)Chaco"
+          "\n6)Misiones"
+          "\n7)Entre Rios"
+          "\n8)Tucuman"
+          "\n9)Mendoza"
+          "\n10)Tierra del Fuego"
+          "\n11)La Pampa"
+          "\n12)Santa Cruz"
+          "\n13)Rio Negro"
+          "\n14)Corrientes"
+          "\n15)San Luis"
+          "\n16)Salta"
+          "\n17)Chubut"
+          "\n18)San Juan"
+          "\n19)Neuquen"
+          "\n20)La Rioja"
+          "\n21)Santiago del Estero"
+          "\n22)Formosa"
+          "\n23)Catamarca")
+
+    ubi=int(input("ingrese la hubicacion segun el cuadro con su respectiva numeracion:"))
+
+    while ubi>23 or ubi<1:
+        print("error al ingrasar")
+        ubi=int(input("ingrese la hubicacion segun el cuadro con su respectiva numeracion:"))
+
+    return ubi
+
+def estado():
+    est=int(input("1)nuevo /2)usado:"))
+    while est!=1 or est!=2:
+        print("error")
+        est=int(input("1)nuevo /2)usado:"))
+
+    return est
